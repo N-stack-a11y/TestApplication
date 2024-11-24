@@ -8,7 +8,8 @@ const ProductDisplay = (props) => {
 
         const {product} = props;
         const {addToCart} = useContext(ShopContext);
-        console.log(product,"product")
+        console.log(props,"props")
+        console.log(g,"product-------")
   return (
     <div className="productdisplay">
         <div className="productdiplay-left">
@@ -18,7 +19,7 @@ const ProductDisplay = (props) => {
             <img src={product?.image} alt="" />
             <img src={product?.image} alt="" />
         </div>
-        <div className="productdisplay-image">
+        <div className="productdisplay-image"> 
             <img className='productdisplay-main-img' src={product?.image} alt="" />
         </div>
         </div>
