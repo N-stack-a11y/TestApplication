@@ -9,10 +9,10 @@ const ProductDisplay = (props) => {
         const {product} = props;
         const {addToCart} = useContext(ShopContext);
         console.log(props,"props")
-        console.log(g,"product-------")
+        console.log(product,"product-------")
   return (
     <div className="productdisplay">
-        <div className="productdiplay-left">
+        <div className="productdisplay-left">
         <div className="productdisplay-img-list">
             <img src={product?.image} alt="" />
             <img src={product?.image} alt="" />
@@ -23,7 +23,7 @@ const ProductDisplay = (props) => {
             <img className='productdisplay-main-img' src={product?.image} alt="" />
         </div>
         </div>
-        <div className="productdiplay-right">
+        <div className="productdisplay-right">
             <h1>{product?.name}</h1>
             <div className="productdisplay-right-star">
                 <img src={star_icon} alt="" />
